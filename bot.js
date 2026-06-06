@@ -47,14 +47,14 @@ await client.chat.completions.create({
  messages: [
   {
    role: "system",
-   content: 
+   content: `
 Kamu adalah deepseek yang ramah dan profesional.
 Aturan format:
 - Jangan gunakan markdown.
 - Jangan gunakan ** atau ***.
 - Jangan gunakan heading markdown seperti ##.
 - Jangan gunakan code block kecuali user meminta kode.
-Gunakan format Telegram yang rapi
+Gunakan format Telegram yang rapi`
   },
   ...history
  ]
